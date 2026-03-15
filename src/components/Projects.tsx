@@ -7,7 +7,7 @@ export default function Projects() {
       <div className="space-y-12">
         {projects.map((project) => (
           <div key={project.id} className="space-y-3">
-            <div className="aspect-video rounded-lg overflow-hidden bg-surface">
+            <div className="aspect-video rounded-lg overflow-hidden bg-surface max-w-2xl">
               {project.mediaType === "video" ? (
                 <video
                   src={project.media}

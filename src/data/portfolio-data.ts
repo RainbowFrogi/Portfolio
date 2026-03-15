@@ -58,7 +58,7 @@ export const socialLinks: SocialLink[] = [
 export const introData: IntroData = {
   name: "Anton Iljina",
   title: "Game Developer",
-  bio: "I'm a game development student from Helsinki, Finland. Currently studying Information Technology at Metropolia UAS, majoring in Video Game Development. I like building immersive game experiences and challenging myself to learn new things.",
+  bio: "I'm a game development student from Helsinki, Finland. Currently studying Bachelor of Engineering at Metropolia UAS, majoring in Video Game Development. I like building immersive game experiences and challenging myself to learn new things.",
   resumeUrl: "/resume.pdf",
 };
 

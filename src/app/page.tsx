@@ -9,7 +9,13 @@ export default function Home() {
     <>
       <Intro />
       <Projects />
+      <div className="max-w-4xl mx-auto px-6" aria-hidden="true">
+        <div className="h-px bg-gradient-to-r from-transparent via-surface-light to-transparent" />
+      </div>
       <Skills />
+      <div className="max-w-4xl mx-auto px-6" aria-hidden="true">
+        <div className="h-px bg-gradient-to-r from-transparent via-surface-light to-transparent" />
+      </div>
       <Experience />
       <Education />
     </>

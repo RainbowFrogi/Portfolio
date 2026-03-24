@@ -22,6 +22,7 @@ export interface Project {
   mediaType: "video" | "gif" | "image";
   category: "featured-game" | "game-jam" | "notable-non-game";
   techStack: string[];
+  duration?: string;
   liveUrl?: string;
   githubUrl?: string;
   itchUrl?: string;
@@ -59,42 +60,45 @@ export const socialLinks: SocialLink[] = [
 export const introData: IntroData = {
   name: "Anton Iljina",
   title: "Game Developer",
-  bio: "I'm a game development student from Helsinki, Finland. Currently studying Bachelor of Engineering at Metropolia UAS, majoring in Video Game Development. I like building immersive game experiences and challenging myself to learn new things.",
+  bio: "I'm a game development student from Helsinki, Finland. Currently studying Bachelor of Engineering at Metropolia UAS, majoring in Video Game Development. I like to challenge myself to learn new things.",
   resumeUrl: "/resume.pdf",
 };
 
 export const projects: Project[] = [
   {
-    id: "project-1",
-    title: "Neon Drift",
+    id: "Ohjelmisto2",
+    title: "Guess The Date",
     description:
-      "A high-speed arcade racer set in a cyberpunk city. Features procedural track generation and online leaderboards.",
-    media: "/projects/neon-drift.mp4",
-    mediaType: "video",
+      "A web-based geography game where players guess the date and locations of historical events. Built with a Python backend and a JavaScript frontend, utilizing Leaflet for interactive maps.",
+    media: "/projects/guessthedate.gif",
+    mediaType: "gif",
     category: "featured-game",
-    techStack: ["Unity", "C#", "Shader Graph", "Blender"],
-    githubUrl: "https://github.com/RainbowFrogi/neon-drift",
+    techStack: ["Javascript", "Python Backend", "SQL", "Leaflet"],
+    duration: "2 months",
+    githubUrl: "https://github.com/RainbowFrogi/Date_Guesser",
   },
   {
-    id: "project-2",
-    title: "Hollow Depths",
+    id: "Tietorakenteet-ja-algoritmit",
+    title: "Chess Engine",
     description:
-      "A 2D metroidvania with hand-drawn art and tight combat mechanics. Explore a vast underground world.",
-    media: "/projects/hollow-depths.mp4",
-    mediaType: "video",
+      "A C++ chess engine built from scratch. Implemented minimax with alpha-beta pruning, move ordering, and PeSTO move tables.",
+    media: "/projects/chess-engine.gif",
+    mediaType: "image",
     category: "featured-game",
-    techStack: ["Unity", "C#", "Aseprite"],
-    githubUrl: "https://github.com/RainbowFrogi/hollow-depths",
+    techStack: ["C++", "Algorithms", "Optimization", "Data Structures"],
+    duration: "2 months",
+    githubUrl: "https://github.com/skillzz123jj/Chessbot",
   },
   {
     id: "Finnish Game Jam 2025",
     title: "Spellsinger",
     description:
       "A writing game where you battle Kalevala style monsters by crafting poems that hurt your enemies the most.",
-    media: "/projects/Spellsinger.gif",
-    mediaType: "gif",
+    media: "/projects/spellsinger.png",
+    mediaType: "image",
     category: "game-jam",
-    techStack: ["Unity", "C#", "SQLite"],
+    duration: "48-hour game jam",
+    techStack: ["Unity", "C#", "Project lead"],
     githubUrl: "https://github.com/Aaroh4/FGJ2025",
     itchUrl: "https://rainbowfrogfin.itch.io/spellsinger"
   },
@@ -106,6 +110,7 @@ export const projects: Project[] = [
     media: "/projects/EsasGreatEscape.gif",
     mediaType: "gif",
     category: "game-jam",
+    duration: "48-hour game jam",
     techStack: ["Unity", "C#", "Git"],
     githubUrl: "https://github.com/skillzz123jj/Spaceship-Game-Jam",
     itchUrl: "https://igor-vossotski.itch.io/esas-great-escape",
@@ -170,7 +175,7 @@ export const experience: TimelineEntry[] = [
   {
     id: "exp-4",
     date: "2023 — Present",
-    title: "Volunteer",
+    title: "Volunteering in Finnish Games Industry",
     organization: "IGDA Finland",
     location: "Helsinki, Finland",
     description:

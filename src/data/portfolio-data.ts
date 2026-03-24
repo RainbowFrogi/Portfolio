@@ -139,23 +139,23 @@ export const skills: string[] = [
 ];
 
 export const experience: TimelineEntry[] = [
-  {
+    {
     id: "exp-1",
+    date: "Jul 2023 — Mar 2024",
+    title: "Research Assistant",
+    organization: "Finnish Defence Forces - Naval Academy",
+    location: "Finland",
+    description:
+      "Served during military service as a research assistant working with simulation tools, Python, and Lua.",
+  },
+  {
+    id: "exp-2",
     date: "Jan 2023 — May 2023",
-    title: "Game Developer",
+    title: "Angry Birds Friends Developer Intern",
     organization: "Rovio Entertainment — Angry Birds Friends Team",
     location: "Espoo, Finland",
     description:
       "Contributed to the live-ops development of Angry Birds Friends. Fixed bugs and implemented new UX solutions within a large multilingual team.",
-  },
-  {
-    id: "exp-2",
-    date: "Jul 2023 — Mar 2024",
-    title: "Research Assistant",
-    organization: "Finnish Defence Forces (Merisotakoulu)",
-    location: "Finland",
-    description:
-      "Served during military service as a research assistant working with simulation tools, Python, and Lua.",
   },
   {
     id: "exp-3",

@@ -20,6 +20,7 @@ export interface Project {
   description: string;
   media: string;
   mediaType: "video" | "gif" | "image";
+  category: "featured-game" | "game-jam" | "notable-non-game";
   techStack: string[];
   liveUrl?: string;
   githubUrl?: string;
@@ -70,6 +71,7 @@ export const projects: Project[] = [
       "A high-speed arcade racer set in a cyberpunk city. Features procedural track generation and online leaderboards.",
     media: "/projects/neon-drift.mp4",
     mediaType: "video",
+    category: "featured-game",
     techStack: ["Unity", "C#", "Shader Graph", "Blender"],
     githubUrl: "https://github.com/RainbowFrogi/neon-drift",
   },
@@ -80,6 +82,7 @@ export const projects: Project[] = [
       "A 2D metroidvania with hand-drawn art and tight combat mechanics. Explore a vast underground world.",
     media: "/projects/hollow-depths.mp4",
     mediaType: "video",
+    category: "featured-game",
     techStack: ["Unity", "C#", "Aseprite"],
     githubUrl: "https://github.com/RainbowFrogi/hollow-depths",
   },
@@ -90,6 +93,7 @@ export const projects: Project[] = [
       "A real-time strategy game where you build and command a fleet of starships across procedurally generated galaxies.",
     media: "/projects/starforge.mp4",
     mediaType: "video",
+    category: "game-jam",
     techStack: ["Unity", "C#", "SQLite"],
     githubUrl: "https://github.com/RainbowFrogi/starforge",
   },
@@ -100,8 +104,21 @@ export const projects: Project[] = [
       "A first-person psychological horror experience. Navigate impossible architecture and uncover the mystery.",
     media: "/projects/liminal-loop.mp4",
     mediaType: "video",
+    category: "game-jam",
     techStack: ["Unity", "C#", "Blender"],
     githubUrl: "https://github.com/RainbowFrogi/liminal-loop",
+    itchUrl: "https://yourname.itch.io/your-game",
+  },
+  {
+    id: "project-5",
+    title: "Chess Engine",
+    description:
+      "A C++ chess engine built from scratch. Implemented minimax with alpha-beta pruning, move ordering, and transposition tables to improve search speed and decision quality.",
+    media: "/projects/chess-engine.gif",
+    mediaType: "gif",
+    category: "notable-non-game",
+    techStack: ["C++", "Algorithms", "Optimization", "Data Structures"],
+    githubUrl: "https://github.com/RainbowFrogi/chess-engine",
   },
 ];
 
@@ -115,7 +132,8 @@ export const skills: string[] = [
   "SQL",
   "Git",
   "Blender",
-  "Game Design",
+  "DirectX",
+  "3D Modeling",
   "Linux",
   "Jira",
 ];

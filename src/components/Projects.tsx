@@ -8,7 +8,7 @@ export default function Projects() {
   const categories = {
     "featured-game": "Featured Projects",
     "game-jam": "Game Jams",
-    "notable-non-game": "Notable Non-Game",
+    "notable-non-game": "Cool Stuff",
   } as const;
   type CategoryKey = keyof typeof categories;
 

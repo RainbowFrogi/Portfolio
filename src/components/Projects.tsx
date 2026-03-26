@@ -8,7 +8,7 @@ export default function Projects() {
   const categories = {
     "featured-game": "Featured Projects",
     "game-jam": "Game Jams",
-    "notable-non-game": "Cool Stuff",
+    "miscellaneous": "Miscellaneous",
   } as const;
   type CategoryKey = keyof typeof categories;
 
@@ -21,8 +21,8 @@ export default function Projects() {
         (project) => project.category === "featured-game"
       ),
       "game-jam": projects.filter((project) => project.category === "game-jam"),
-      "notable-non-game": projects.filter(
-        (project) => project.category === "notable-non-game"
+      "miscellaneous": projects.filter(
+        (project) => project.category === "miscellaneous"
       ),
     }),
     []
@@ -81,6 +81,9 @@ export default function Projects() {
               </div>
               <div>
                 <h3 className="text-lg font-medium">{project.title}</h3>
+                {project.duration && (
+                  <p className="text-xs text-muted mt-1">Duration: {project.duration}</p>
+                )}
                 <p className="text-muted text-sm mt-1 leading-relaxed">
                   {project.description}
                 </p>
@@ -122,7 +125,7 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       className="text-sm text-primary hover:underline"
                     >
-                      Play
+                      Download
                     </a>
                   )}
                 </div>

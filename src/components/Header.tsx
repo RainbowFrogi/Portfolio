@@ -11,6 +11,7 @@ export default function Header() {
         {introData.resumeUrl && (
           <a
             href={introData.resumeUrl}
+            download
             className="text-sm text-muted hover:text-foreground transition-colors"
           >
             Resume

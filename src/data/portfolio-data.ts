@@ -20,7 +20,7 @@ export interface Project {
   description: string;
   media: string;
   mediaType: "video" | "gif" | "image";
-  category: "featured-game" | "game-jam" | "notable-non-game";
+  category: "featured-game" | "game-jam" | "miscellaneous";
   techStack: string[];
   duration?: string;
   liveUrl?: string;
@@ -61,25 +61,13 @@ export const introData: IntroData = {
   name: "Anton Iljina",
   title: "Game Developer",
   bio: "I'm a game development student from Helsinki, Finland. Currently studying Bachelor of Engineering at Metropolia UAS, majoring in Video Game Development. I like to challenge myself to learn new things.",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/CV_Anton_Iljina.pdf",
 };
 
 export const projects: Project[] = [
   {
-    id: "Ohjelmisto2",
-    title: "Guess The Date",
-    description:
-      "A web-based geography game where players guess the date and locations of historical events. Built with a Python backend and a JavaScript frontend, utilizing Leaflet for interactive maps.",
-    media: "/projects/guessthedate.gif",
-    mediaType: "gif",
-    category: "featured-game",
-    techStack: ["Javascript", "Python Backend", "SQL", "Leaflet"],
-    duration: "2 months",
-    githubUrl: "https://github.com/RainbowFrogi/Date_Guesser",
-  },
-  {
-    id: "Tietorakenteet-ja-algoritmit",
-    title: "Chess Engine",
+    id: "featured-game-1",
+    title: "Chess Engine - 2026",
     description:
       "A C++ chess engine built from scratch. Implemented minimax with alpha-beta pruning, move ordering, and PeSTO move tables.",
     media: "/projects/chess-engine.gif",
@@ -90,21 +78,45 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/skillzz123jj/Chessbot",
   },
   {
-    id: "Finnish Game Jam 2025",
-    title: "Spellsinger",
+    id: "featured-game-2",
+    title: "Guess The Date - 2025",
+    description:
+      "A web-based geography game where players guess the date and locations of historical events. Built with a Python backend and a JavaScript frontend, utilizing Leaflet for interactive maps.",
+    media: "/projects/guessthedate.gif",
+    mediaType: "gif",
+    category: "featured-game",
+    techStack: ["Javascript", "Python Backend", "SQL", "Leaflet"],
+    duration: "2 months",
+    githubUrl: "https://github.com/RainbowFrogi/Date_Guesser",
+  },
+  {
+    id: "featured-game-3",
+    title: "Tap Matchers - 2022",
+    description:
+      "A candy crush style game where you need to tap matching sections of same colors. Made as a proof of skill for Rovio Entertainment. No AI was used in the developmnet of this game.",
+    media: "/projects/tap-matchers.mp4",
+    mediaType: "video",
+    category: "featured-game",
+    techStack: ["C#", "Unity", "Algorithms"],
+    duration: "1 week",
+    githubUrl: "https://github.com/skillzz123jj/Chessbot",
+  },
+  {
+    id: "game-jam-1",
+    title: "Spellsinger - 2025",
     description:
       "A writing game where you battle Kalevala style monsters by crafting poems that hurt your enemies the most.",
     media: "/projects/spellsinger.png",
     mediaType: "image",
     category: "game-jam",
     duration: "48-hour game jam",
-    techStack: ["Unity", "C#", "Project lead"],
+    techStack: ["Unity", "C#"],
     githubUrl: "https://github.com/Aaroh4/FGJ2025",
     itchUrl: "https://rainbowfrogfin.itch.io/spellsinger"
   },
   {
-    id: "Spaceship Game Jam 2025",
-    title: "Esa's Great Escape",
+    id: "game-jam-2",
+    title: "Esa's Great Escape - 2025",
     description:
       "A side-scrolling fast paced puzzle game, where Esa's spacestation has exploded and he needs to collect all the parts he needs for his way back to Earth.",
     media: "/projects/EsasGreatEscape.gif",
@@ -115,16 +127,29 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/skillzz123jj/Spaceship-Game-Jam",
     itchUrl: "https://igor-vossotski.itch.io/esas-great-escape",
   },
-  {
-    id: "project-5",
-    title: "Chess Engine",
+    {
+    id: "game-jam-3",
+    title: "Masks Please - 2026",
     description:
-      "A C++ chess engine built from scratch. Implemented minimax with alpha-beta pruning, move ordering, and transposition tables to improve search speed and decision quality.",
-    media: "/projects/chess-engine.gif",
+      "A papers please style game where at the start of every day you are given new rules to follow on which masks you let in and which you turn away. The game gets more and more difficult as you progress as you work under time pressure and there are more rules to follow.",
+    media: "/projects/masks-please.gif",
     mediaType: "gif",
-    category: "notable-non-game",
-    techStack: ["C++", "Algorithms", "Optimization", "Data Structures"],
-    githubUrl: "https://github.com/RainbowFrogi/chess-engine",
+    category: "game-jam",
+    duration: "48-hour game jam",
+    techStack: ["Unity", "C#", "AI"],
+    githubUrl: "https://github.com/RainbowFrogi/MaskBouncer",
+    liveUrl: "https://rainbowfrogfin.itch.io/masks-please",
+  },
+  {
+    id: "miscellaneous-1",
+    title: "HRV(Heart Rate Variability) Monitor - 2025",
+    description:
+      "A Python application that connects to a heart rate monitor and visualizes the heart rate variability in real time. Used ",
+    media: "/projects/hrv-monitor.jpg",
+    mediaType: "image",
+    category: "miscellaneous",
+    techStack: ["MicroPython", "Sensor Integration", "Kubios", "Raspberry Pi"],
+    githubUrl: "https://github.com/RainbowFrogi/HRV_Monitor_project",
   },
 ];
 

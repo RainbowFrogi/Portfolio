@@ -93,7 +93,7 @@ export const projects: Project[] = [
     id: "featured-game-3",
     title: "Tap Matchers - 2022",
     description:
-      "A candy crush style game where you need to tap matching sections of same colors. Made as a proof of skill for Rovio Entertainment. No AI was used in the developmnet of this game.",
+      "A candy crush style game where you need to tap matching sections of same colors. Made as a proof of skill for Rovio Entertainment.",
     media: "/projects/tap-matchers.mp4",
     mediaType: "video",
     category: "featured-game",
@@ -144,7 +144,7 @@ export const projects: Project[] = [
     id: "miscellaneous-1",
     title: "HRV(Heart Rate Variability) Monitor - 2025",
     description:
-      "A Python application that connects to a heart rate monitor and visualizes the heart rate variability in real time. Used ",
+      "A Python application that connects to a heart rate monitor and visualizes the heart rate variability in real time. Used a raspberry pi pico and a heart rate sensor to collect data, which is then processed and visualized using either Kubios cloud or local calculations.",
     media: "/projects/hrv-monitor.jpg",
     mediaType: "image",
     category: "miscellaneous",
@@ -171,8 +171,17 @@ export const skills: string[] = [
 ];
 
 export const experience: TimelineEntry[] = [
-    {
+  {
     id: "exp-1",
+    date: "2023 — Present",
+    title: "Volunteering in Finnish Games Industry",
+    organization: "IGDA Finland",
+    location: "Helsinki, Finland",
+    description:
+      "Active volunteer in the Finnish games industry community, attending events and building professional connections.",
+  },  
+  {
+    id: "exp-2",
     date: "Jul 2023 — Mar 2024",
     title: "Research Assistant",
     organization: "Finnish Defence Forces - Naval Academy",
@@ -181,7 +190,7 @@ export const experience: TimelineEntry[] = [
       "Served during military service as a research assistant working with simulation tools, Python, and Lua.",
   },
   {
-    id: "exp-2",
+    id: "exp-3",
     date: "Jan 2023 — May 2023",
     title: "Angry Birds Friends Developer Intern",
     organization: "Rovio Entertainment — Angry Birds Friends Team",
@@ -190,22 +199,13 @@ export const experience: TimelineEntry[] = [
       "Contributed to the live-ops development of Angry Birds Friends. Fixed bugs and implemented new UX solutions within a large multilingual team.",
   },
   {
-    id: "exp-3",
+    id: "exp-4",
     date: "Jan 2021 — Mar 2021",
     title: "Technical Support Engineer Intern",
     organization: "Gigantti Forum",
     location: "Helsinki, Finland",
     description:
       "Provided technical support to customers, troubleshooting hardware and software issues.",
-  },
-  {
-    id: "exp-4",
-    date: "2023 — Present",
-    title: "Volunteering in Finnish Games Industry",
-    organization: "IGDA Finland",
-    location: "Helsinki, Finland",
-    description:
-      "Active volunteer in the Finnish games industry community, attending events and building professional connections.",
   },
 ];
 

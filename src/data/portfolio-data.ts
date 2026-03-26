@@ -155,6 +155,7 @@ export const projects: Project[] = [
 
 export const skills: string[] = [
   "C#",
+  "C++",
   "Unity",
   "Python",
   "Lua",

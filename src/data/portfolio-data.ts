@@ -85,7 +85,7 @@ export const projects: Project[] = [
     media: "/projects/guessthedate.gif",
     mediaType: "gif",
     category: "featured-game",
-    techStack: ["Javascript", "Python Backend", "SQL", "Leaflet"],
+    techStack: ["JavaScript", "Python Backend", "SQL", "Leaflet"],
     duration: "2 months",
     githubUrl: "https://github.com/RainbowFrogi/Date_Guesser",
   },
@@ -93,7 +93,7 @@ export const projects: Project[] = [
     id: "featured-game-3",
     title: "Tap Matchers - 2022",
     description:
-      "A candy crush style game where you need to tap matching sections of same colors. Made as a proof of skill for Rovio Entertainment.",
+      "A Candy Crush-style game where you tap matching sections of the same color. Made as a proof-of-skill project for Rovio Entertainment.",
     media: "/projects/tap-matchers.mp4",
     mediaType: "video",
     category: "featured-game",
@@ -105,7 +105,7 @@ export const projects: Project[] = [
     id: "game-jam-1",
     title: "Spellsinger - 2025",
     description:
-      "A writing game where you battle Kalevala style monsters by crafting poems that hurt your enemies the most.",
+      "A writing game where you battle Kalevala-style monsters by crafting poems that damage your enemies.",
     media: "/projects/spellsinger.png",
     mediaType: "image",
     category: "game-jam",
@@ -118,7 +118,7 @@ export const projects: Project[] = [
     id: "game-jam-2",
     title: "Esa's Great Escape - 2025",
     description:
-      "A side-scrolling fast paced puzzle game, where Esa's spacestation has exploded and he needs to collect all the parts he needs for his way back to Earth.",
+      "A side-scrolling, fast-paced puzzle game where Esa's space station has exploded, and he must collect the missing parts to make his way back to Earth.",
     media: "/projects/EsasGreatEscape.gif",
     mediaType: "gif",
     category: "game-jam",
@@ -131,7 +131,7 @@ export const projects: Project[] = [
     id: "game-jam-3",
     title: "Masks Please - 2026",
     description:
-      "A papers please style game where at the start of every day you are given new rules to follow on which masks you let in and which you turn away. The game gets more and more difficult as you progress as you work under time pressure and there are more rules to follow.",
+      "A Papers, Please-style game where each day starts with new rules for which masks to allow or turn away. The game grows more difficult over time as pressure increases and rules become more complex.",
     media: "/projects/masks-please.gif",
     mediaType: "gif",
     category: "game-jam",
@@ -144,7 +144,7 @@ export const projects: Project[] = [
     id: "miscellaneous-1",
     title: "HRV(Heart Rate Variability) Monitor - 2025",
     description:
-      "A Python application that connects to a heart rate monitor and visualizes the heart rate variability in real time. Used a raspberry pi pico and a heart rate sensor to collect data, which is then processed and visualized using either Kubios cloud or local calculations.",
+      "A Python application that connects to a heart rate monitor and visualizes heart rate variability in real time. It uses a Raspberry Pi Pico and a heart rate sensor to collect data, which is then processed and visualized using either Kubios Cloud or local calculations.",
     media: "/projects/hrv-monitor.jpg",
     mediaType: "image",
     category: "miscellaneous",

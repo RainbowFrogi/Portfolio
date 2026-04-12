@@ -60,7 +60,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 gap-10">
           {activeProjects.map((project) => (
             <div key={project.id} className="space-y-3">
-              <div className="aspect-video rounded-lg overflow-hidden bg-surface h-96">
+              <div className="w-full max-w-full aspect-video rounded-lg overflow-hidden bg-surface">
                 {project.mediaType === "video" ? (
                   <video
                     src={project.media}

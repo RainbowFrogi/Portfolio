@@ -66,6 +66,18 @@ export const introData: IntroData = {
 
 export const projects: Project[] = [
   {
+    id: "featured-game-4",
+    title: "Infinite Constellation Tower - 2026",
+    description:
+      "A Unity game created by a team of three coders and three artists.",
+    media: "/projects/infinite-constellation-tower.mp4",
+    mediaType: "video",
+    category: "featured-game",
+    duration: "2 months",
+    techStack: ["Unity", "C#", "AI"],
+    liveUrl: "https://skillzz123jj.itch.io/infinite-constellation-tower",
+  },
+  {
     id: "featured-game-1",
     title: "Chess Engine - 2026",
     description:
@@ -127,7 +139,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/skillzz123jj/Spaceship-Game-Jam",
     itchUrl: "https://igor-vossotski.itch.io/esas-great-escape",
   },
-    {
+  {
     id: "game-jam-3",
     title: "Masks Please - 2026",
     description:
